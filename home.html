@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Advanced Trading Manager</title>
+    </head>
+    <body>
+        <div id="main">
+            <div id="menu-header">
+                
+            </div>
+            <div id="content" class="home-content">
+                <h1 class="home-header" id="home-header">Start a Supervised Trading Journey</h1>
+                <p class="home-text" id="accuracy-rating-text">Accuracy Rating: 99</p>
+                <button class="home-button" id="registration-button" onclick="openForm()">Get Started</button>
+            </div>
+            <div class="form-popup" id="form-container">
+                <form id="user-registration-form" class="form-container">
+                    <div class="half-col" id="real-name-container">
+                        <label for="user-real-name" id="user-real-name-label">Name</label>
+                        <input id="user-real-name" type="text" pattern="[A-Z][a-z]" required/>
+                    </div>
+                    <div class="half-col" id="user-name-container">
+                        <label for="user-name" id="user-name-label">Username</label>
+                        <input id="user-name" type="text" pattern="[A-Z][a-z_-][0-9]{5,}" name="user-name" required/>
+                    </div>
+                    <div class="full-col" id="email-container">
+                        <label for="user-email" id="email-label">Email</label>
+                        <input id="user-email" type="email" name="user-email" required/>
+                    </div>
+                    <div class="half-col" id="password-container">
+                        <label for="user-password" id="password-label">Password</label>
+                        <input id="user-password" type="password" name="user-password" required/>
+                    </div>
+                    <div class="half-col" id="password-confirm-container">
+                        <label for="user-password-confirmation" id="password-confirmation-label">Confirm Password</label>
+                        <input id="user-password-confirmation" type="password" name="user-password-confirmation" required/>
+                    </div>
+                    <div class="full-col" id="submit-container">
+                        <button class="form-submit" id="registration-submit" type="submit" onclick="closeForm()">Register</button>
+                    </div>    
+                </form>
+            </div>
+            <script src="form-value-checker.js"></script>
+        </div>
+    </body>
+</html>

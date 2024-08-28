@@ -1,0 +1,138 @@
+/* Site Styles */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5)), url('https://financebreakout.com/wp-content/uploads/2021/09/Stock-market-1920x1281.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: fill;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+p {
+    margin: 5px;
+    padding-bottom: 20px;
+}
+
+/* Home Styles */
+
+.home-header, .home-text{
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.home-button {
+    position: absolute;
+    top:100%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+#content {
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%)
+}
+
+.home-content {
+    background: radial-gradient(circle at center, rgb(38, 1, 43), rgba(80, 3, 43, 0.258));
+    padding: 30px;
+}
+
+/* Button Styles */
+
+button {
+    color: #fff;
+    background-color: #b06421;
+    padding: 10px 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 2px 2px 4px rgba(8, 71, 98, 0.568);
+}
+
+button:hover {
+    background-color: rgba(73, 68, 68, 0.4);
+    color: #b06421;
+}
+
+.form-submit {
+    background-color: #b06421;
+    padding: 4px 0px;
+    display: inline-block;
+    width: 60%;
+    margin: 15px 0 0 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.form-submit:hover {
+    background-color: rgba(73, 68, 68, 0.4);
+    color: #b06421;
+}
+
+/* Form Styles */
+
+.form-popup {
+    color: #fff;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid rgba(69, 68, 68, 0.4);
+    z-index: 9;
+    
+  }
+
+.form-container {
+    max-width: 500px;
+    padding: 50px;
+    background-color: rgba(24, 24, 40, 0.85);
+  }
+
+#user-email {
+    width:98%
+}
+
+.half-col {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    padding-bottom: 5px;
+}
+
+.full-col {
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input {
+    border: none;
+    border-radius: 14px;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    text-align: left;
+    font-weight: 650;
+}
